@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Projeto Fomulario Freecode</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Projeto Fomulario Freecode</h1>
+    <p id="description"> Descrição do Projeto Formulario Freecode</p>
+    <form id="survey-form">
+       <!-- Caixas Nome, Email etc.. -->
+      <fieldset>
+        <!--CAIXA NOME-->
+        <label for="name" id="name-label">Nome 
+<input id="name" name="nome type="text" placeholder="Escreva seu nome completo" required  />
+</label>
+
+<!--CAIXA EMAIL --> 
+<label for="email" id="email-label">E-mail
+<input id="email" name="email" type="email" placeholder="Escreva seu e-mail" required />
+</label> 
+
+<!--CAIXA IDADE -->
+<label for="number" id="number-label">Idade
+  <input id="number" name="idade" type="number" min="13" max="150" placeholder="Idade" required />
+</label>
+
+      <!-- NOVA CAIXA SELECT  -->
+<label for="dropdown">Escolha um Exemplo
+        <select name="dropdown" id="dropdown">
+<option value="">Exemplos</option>          
+<option value="1">Exemplo 1</option>
+<option value="2">Exemplo 2</option>
+      </label>
+        </select>
+      </fieldset>
+<p>Escolha um segundo exemplo</p>
+      <!-- NOVO FIELDSET -->
+      <fieldset>
+        <!--BOTÃO RADIO -->
+        <label for="name"> 
+  <input for="name" type="radio" name="radio-box" class="inline" value="1"/> Ex 01
+  <input for="name" type="radio" name="radio-box" class="inline"value="2"/> Ex 02
+  </label>  
+  <!-- BOTÃO CHECKBOX -->
+  <label for="checkbox">
+  <input id="checkbox" type="checkbox" name="checkbox" class="inline" value="1">Checkbox 1 
+
+  <!-- BOTÃO CHECKBOX 2 -->
+  </label>
+  <label for="checkbox">
+  <input id="checkbox" type="checkbox" name="checkbox" class="inline" value="2">Checkbox 2
+  </label>
+
+  <!-- BOTÃO CHECKBOX 3 -->
+  </label>
+  <label for="checkbox">
+  <input id="checkbox" type="checkbox" name="checkbox" class="inline" value="3">Checkbox 3
+  </label>
+</fieldset>
+  <!-- AREA DE TEXTO -->
+  <p>Escreva sua Bio</p>
+  <fieldset>
+  <label for="bio">
+    <textarea id="bio" name="bio" rows="3" cols="30" placeholder="Escreva um pouco sobre você."></textarea>
+      </fieldset>
+      </label>
+
+      <!-- BOTÃO INPUT ENVIAR -->
+
+        <input id="submit" type="submit"/>
+
+      </form>
+  </body>
+  </html>
